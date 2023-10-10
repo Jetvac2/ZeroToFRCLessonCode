@@ -1,4 +1,12 @@
-//This is a integer
+// This is a integer
 int num = 55;
-//This is a double
+// This is a double
 double decimalNum = 44.54;
+// This is a float
+float decimalNum2 = 5.135;
+// This is a boolean
+Boolean tValue = true;
+//Or
+Boolean fValue = false;
+//This is a String
+String exampleStr = "This is a string";
