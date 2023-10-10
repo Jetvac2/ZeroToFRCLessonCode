@@ -1,0 +1,4 @@
+//This is a integer
+int num = 55;
+//This is a double
+double decimalNum = 44.54;
