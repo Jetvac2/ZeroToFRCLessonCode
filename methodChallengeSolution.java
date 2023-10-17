@@ -1,12 +1,11 @@
 class Main {
     public static void main(String[] args) {
-      sum = add(55, number);
-      System.out.println(sum);
-      printNumber(sum);
+      area = triangleArea(55.3, 22.1);
+      System.out.println(area);
     }
 
     // type, name, (arguments)
-    int add(double base, double height) {
+    int triangleArea(double base, double height) {
       return num1 + num2;
     }
 }
