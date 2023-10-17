@@ -4,8 +4,7 @@ class Main {
       System.out.println(area);
     }
 
-    // type, name, (arguments)
     int triangleArea(double base, double height) {
-      return num1 + num2;
+      return base + height;
     }
 }
