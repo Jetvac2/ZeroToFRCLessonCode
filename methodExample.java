@@ -1,3 +1,9 @@
+// Math Symbols
+// Add: +
+// Subtract: -
+// Times: *
+// Divide: /
+
 class Main {
      // This is a method, Java just automaticly calls this method for you
    int number = 42;
