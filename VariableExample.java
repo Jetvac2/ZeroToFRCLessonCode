@@ -1,3 +1,8 @@
+// This is a comment, they allows you to wright text in your code to take notes and describe how it works
+/* 
+  This is a multiline comment, these are used for longer description,
+  like this
+*/
 // This is a class, we will cover these later
 class Main {
   // This is a integer
