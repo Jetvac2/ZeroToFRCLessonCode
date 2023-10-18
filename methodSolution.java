@@ -4,7 +4,7 @@ class Main {
       System.out.println(area);
     }
 
-    double triangleArea(double base, double height) {
+     double triangleArea(double base, double height) {
       return base * height / 2;
     }
 }
