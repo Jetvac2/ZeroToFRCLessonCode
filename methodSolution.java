@@ -5,6 +5,6 @@ class Main {
     }
 
     int triangleArea(double base, double height) {
-      return base + height;
+      return base * height / 2;
     }
 }
