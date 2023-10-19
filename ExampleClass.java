@@ -1,7 +1,7 @@
 // Imports to other classes go here
 
 // Class Declaration
-class ExampleClass {
+public class ExampleClass {
     // Instance Variables
     // private type name
     private int exampleInstanceVar;
