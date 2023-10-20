@@ -1,5 +1,3 @@
-// Imports to other classes go here
-
 // Class Declaration
 public class ExampleClass {
     // Instance Variables
