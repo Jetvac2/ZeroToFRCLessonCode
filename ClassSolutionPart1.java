@@ -5,6 +5,8 @@ public class Book {
   public Book(String title, String author) {
     this.title = title;
     this.author = author;
+    System.out.println(this.title);
+    System.out.println(this.author);
   }
 
   public String getTitle() {
