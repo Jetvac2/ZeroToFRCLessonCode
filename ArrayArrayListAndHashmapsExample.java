@@ -35,7 +35,7 @@ class Main {
     // name[index]
     array[0] = 44;
     array[1] = 55;
-    array[2] == 24;
+    array[2] = 24;
     array[3] = 41;
     array[4] = 1005;
 
