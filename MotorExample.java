@@ -27,6 +27,10 @@ public class MotorExample {
 
         // Sets the idke mode to break, basicly makes the motor break when it is not being told to move.
         // You almost allways want it to be break
+
+        // Sets the spark max to defult settings, always start by doing this
+        m_sparkMotor.restoreFactoryDefaults();
+        
         this.m_sparkMotor.setIdleMode(IdleMode.kBrake);
         
         // Sets the motor config to the settings selected above.
