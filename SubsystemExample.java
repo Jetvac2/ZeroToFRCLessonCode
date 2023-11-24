@@ -1,4 +1,6 @@
 package frc.robot.subsystems;
+
+
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.SparkMaxPIDController;
 import com.revrobotics.CANSparkMax.IdleMode;
@@ -29,6 +31,10 @@ public class ArmPivotSubsystem extends SubsystemBase{
     // CPR is short for counts per rev, or encoder pulses
     public void setPivotAngleCPR(double angleInCPR) {
         this.pivotPID.setReference(angleInCPR, CANSparkMax.ControlType.kPosition);
+    }
+
+    public double getPivotPositionCPR() {
+        return this.m_pivot.getEncoder().getPosition();
     }
 
     @Override
