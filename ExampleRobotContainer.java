@@ -60,18 +60,26 @@ public class RobotContainer {
     configureBindings();
   }
 
- 
   private void configureBindings() {
+    // You declare a Joystick button and name it based on what command it is running
+    // ::schedule along with Commands.runOnces is being used because it accesses a subsystem
+    //that is already in use, the drive subsystem and the command scheduler avoid automatically scheduling
+    // a command that makes use of a subsystem that is already in use
     final JoystickButton lockSwerves =  new JoystickButton(m_driverController, XboxController.Button.kRightBumper.value);
     lockSwerves.onTrue(Commands.runOnce(this.lockSwerves::schedule));
     lockSwerves.onFalse(Commands.runOnce(this.lockSwerves::cancel));
+
+    // This is how you would generally call a command on button press
+    final JoystickButton midCone = new JoystickButton(m_driverController, XboxController.Button.kX.value);
+    midCone.onTrue(new MidCone(m_armSubsystem));
   }
 
-  
+  // This is ware you set up your auton chooser. You generally use a sendable chooser.
   public Command getAutonomousCommand() {
     return null;
   }
 
+  // This is a method that creates a deadband for the joystick input
   private static double modifyAxis(double value) {
     // Deadband
     value = MathUtil.applyDeadband(value, OperatorConstants.kDeadband);
